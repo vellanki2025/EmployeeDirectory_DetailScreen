@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress NavigationFile -->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/employeeFragment">
+
+    <fragment
+        android:id="@+id/employeeFragment"
+        android:name="com.organization.directory.ui.EmployeeFragment"
+        android:label="EmployeeFragment" />
+
+    <fragment
+        android:id="@+id/employeeFragmentDetail"
+        android:name="com.organization.directory.ui.EmployeeDetailFragment"
+        android:label="EmployeeDetailFragment">
+        <argument
+            android:name="myArgument"
+            android:defaultValue=""
+            app:argType="string" />
+    </fragment>
+
+</navigation>
